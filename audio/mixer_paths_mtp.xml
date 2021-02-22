@@ -88,7 +88,6 @@
     <ctl name="SpkrMono WSA_RDAC" value="ZERO" />
     <ctl name="SpkrMono BOOST Switch" value="1" />
     <ctl name="EAR PA Gain" value="POS_6_DB" />
-    <ctl name="EAR PA Gain" value="POS_1P5_DB" />
     <ctl name="EAR PA Boost" value="ENABLE" />
     <ctl name="Speaker Boost" value="DISABLE" />
     <ctl name="MI2S_RX Channels" value="One" />
@@ -1303,10 +1302,6 @@
         <ctl name="RX1 MIX1 INP1" value="RX1" />
         <ctl name="RX2 MIX1 INP1" value="RX2" />
         <ctl name="RX HPH Mode" value="HD2" />
-        <!--
-        <ctl name="COMP0 RX1" value="1" />
-        <ctl name="COMP0 RX2" value="1" />
-        -->
         <ctl name="RDAC2 MUX" value="RX2" />
         <ctl name="RX1 Digital Volume" value="84" />
         <ctl name="RX2 Digital Volume" value="84" />
@@ -1608,5 +1603,6 @@
 
     <path name="voice-music-tx">
     </path>
+
 
 </mixer>
