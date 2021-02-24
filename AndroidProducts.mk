@@ -15,4 +15,3 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/kangos_sakura.mk
- de89ef4... Kangos Bringup
