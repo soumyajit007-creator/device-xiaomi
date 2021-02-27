@@ -9,4 +9,7 @@
     <string name="ancient_camera_mp_summary">12/5</string>
     <string name="ancient_screen_type_summary">IPS 5.84</string>
 
+    <!-- AncientOS About Maintainer Info -->
+    <string name="maintainer_name">Soumyajit_Paul</string>
+
 </resources>
