@@ -21,16 +21,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/sakura/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
-
-# Maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.corvus.maintainer=Soumyajit_Paul
+# Inherit some common AncientOS stuff.
+$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sakura
-PRODUCT_NAME := corvus_sakura
+PRODUCT_NAME := ancient_sakura
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 6 Pro
@@ -54,3 +50,6 @@ TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 # Boot Animation#Face Unlock Flag
 TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# Vanilla
+ANCIENT_NOGAPPS=true
