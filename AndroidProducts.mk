@@ -14,4 +14,5 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_sakura.mk
+    $(LOCAL_DIR)/kangos_sakura.mk
+ de89ef4... Kangos Bringup
