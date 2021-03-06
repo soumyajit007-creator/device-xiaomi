@@ -1,0 +1,18 @@
+[
+    {,
+        "repository":   "device-xiaomi",
+        "target_path":  "device/xiaomi/sakura"
+    },
+    {
+        "repository":   "vendor-xiaomi",
+        "target_path":  "vendor/xiaomi",
+    },
+    {
+        "repository":   "revvz",
+        "target_path":  "kernel/xiaomi/msm8953",
+    },
+    {
+        "repository":   "android_packages_resources_devicesettings",
+        "target_path":  "packages/resources/devicesettings"
+    }
+]
