@@ -22,16 +22,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, device/xiaomi/sakura/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sakura
-PRODUCT_NAME := lineage_sakura
+PRODUCT_NAME := xtended_sakura
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 6 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
+
+# Maintainer
+XTENDED_MAINTAINER := Soumyajit_Paul
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
@@ -41,8 +44,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys"
 
-#DerpFest stuff
+# Gapps
 IS_PHONE := true
 TARGET_GAPPS_ARCH += arm64
 TARGET_BOOT_ANIMATION_RES += 1080
 
+# Face Unlock Flag
+TARGET_FACE_UNLOCK_SUPPORTED := true
